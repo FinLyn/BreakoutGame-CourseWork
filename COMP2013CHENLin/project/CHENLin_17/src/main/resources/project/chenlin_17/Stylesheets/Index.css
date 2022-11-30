@@ -1,0 +1,39 @@
+#m_BackgroundView{
+    -fx-fill-height: 100%;
+    -fx-fit-to-width: 100%;
+    -fx-fit-to-height: 100%;
+    -fx-fit-to-width: 100%;
+}
+
+.button{
+    -fx-content-display: Center;
+    -fx-text-fill: #ffffff;
+    /*-fx-font-family: "Gill Sans MT";*/
+    /*-fx-font-family: Papyrus ;*/
+    -fx-font-family: "Bodoni MT Black";
+    /*-fx-font-family: "Calisto MT";*/
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-font-size: 18;
+    -fx-spacing: 10;
+    -fx-text-fill: #f1efef;
+    -fx-padding: -2 10 -2 10;
+    -fx-background-color: rgb(128, 186, 204);
+}
+
+
+.button:hover{
+    /*-fx-background-color: white;*/
+    -fx-background-color: black;
+    -fx-font-size: 20;
+     -fx-text-fill: white;
+    -fx-padding: 0 10 0 10;
+}
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+16 8
+
+
+
+
+     CCC
+     CCC      CCC
+     cLLc      CCC
+     l L l      cLLc
+     LLL      l L l
+     LAL      LLL
+    ALLA     LAL
+    ALLA    ALLA
+    saAAas    ALLA
+    saAAas    saAAas
+    AAAA    saAAas
+    AAAA    AAAA
+                AAAA
+
+
+

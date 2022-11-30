@@ -1,0 +1,50 @@
+.root {
+    -fx-background-image: url('../Pictures/Background/loginLogo.png');
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: top;
+    -fx-background-color: black;
+}
+
+.label{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#m_Title{
+    -fx-font-size: 32;
+    -fx-font-family: "Stencil";
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#m_UserName,#m_Password{
+    -fx-font-family: "Stencil";
+
+}
+.button {
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-font-family: "Stencil";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#b2e5f6, #3e92ce);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-radius: 100;
+}
+
+.requiredText{
+    -fx-text-fill: white;
+    -fx-font-family: "Stencil";
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#3e92ce, #b2e5f6);
+}
+#m_GridSetting{
+    -fx-hgap: 40;
+    -fx-alignment: center;
+    -fx-vgap:40;
+}

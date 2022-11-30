@@ -1,0 +1,92 @@
+/*The css style for the Charactor Options*/
+#m_ChooseBallText,#m_ChooseSetText,#m_ChoosePaddleText{
+    -fx-background-color: grey;
+    -fx-background-radius: 30;
+    -fx-font-size: 15;
+}
+
+#m_SceneOptions,#m_DifficultyChoiceText{
+    -fx-background-color: grey;
+    -fx-background-radius: 30;
+    -fx-font-size: 15;
+}
+
+#m_Background,#m_CharacterBackground{
+    /*-fx-background-image: url('../Pictures/background2.png');*/
+    /*-fx-background-color: #b2e5f6;*/
+    -fx-background-color: linear-gradient(#b2e5f6, #0e77c2);
+    -fx-opacity: 0.8;
+    -fx-background-size: 100%;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-fill-height: 100%;
+    -fx-fit-to-width: 100%;
+    -fx-fit-to-height: 100%;
+    -fx-fit-to-width: 100%;
+}
+#m_SceneTitle{
+    -fx-stroke-type: outside;
+    -fx-stroke: #4f4b4b;
+    -fx-stroke-width: 3;
+    -fx-font-size: 50;
+    -fx-fill: #ece9e9;
+    -fx-background-image: url('../Pictures/background2.png');
+    -fx-font-family: Algerian;
+}
+#m_ChangeScene .button{
+    -fx-background-color: rgba(239, 157, 89, 0.83);
+    -fx-background-size: 80%;
+    -fx-background-radius: 50;
+    -fx-font-family: "Calisto MT";
+    -fx-stroke-width: 3;
+    -fx-stroke: white;
+    -fx-fill:darkblue;
+    -fx-text-fill: white;
+    -fx-pref-height: 50;
+    -fx-pref-width: 150;
+    -fx-max-height: 70;
+    -fx-max-width: 250;
+}
+#m_SelectScene .button{
+    -fx-background-color: grey;
+    -fx-background-radius: 50%;
+    -fx-fit-to-width: 4%;
+}
+#m_DifficultyChoice .button{
+    -fx-background-color: lightblue;
+}
+
+.label{
+    -fx-alignment: center;
+    -fx-font-family: "Castellar";
+    -fx-background-color: #0e77c2;
+    -fx-text-fill: white;
+    -fx-font-size: large;
+}
+
+.text{
+    -fx-font-family: "Calisto MT";
+    -fx-font-weight: bold;
+}
+#m_ComboBox,#m_DifficultyChoice .radio-button{
+    -fx-font-size: 12;
+}
+.vboxclass{
+    -fx-border-width: 4;
+    -fx-border-color: white;
+    -fx-border-radius: 10%;
+}
+.vboxclass .label{
+    -fx-pref-width: 100;
+    -fx-pref-height: 34;
+}
+
+
+.
+
+
+
+
+
+
+

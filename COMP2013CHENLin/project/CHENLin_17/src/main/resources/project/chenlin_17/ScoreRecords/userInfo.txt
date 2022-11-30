@@ -1,0 +1,8 @@
+CHENLIN 1234 
+chenlin 1234
+chen 1
+chen'lin 1234
+chenLIN 1234
+CHEN 1
+BOB 1234
+CHENLLIN 1234

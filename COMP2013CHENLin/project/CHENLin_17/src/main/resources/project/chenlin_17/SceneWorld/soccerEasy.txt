@@ -1,0 +1,17 @@
+12 8
+
+      llllllll
+      lllll  l
+      lall    l
+      lall    l
+      lallc c l
+      lall s  ll
+      lall s  cl
+      lal s s  l
+      lalc  s  l
+      lall    ll
+      l lll  lll
+      l        l
+      lll      l
+      llll  C  l
+      llll  ca  l

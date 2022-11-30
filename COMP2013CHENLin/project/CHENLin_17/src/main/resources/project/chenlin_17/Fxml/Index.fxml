@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="m_BackgroundView" prefHeight="718.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.chenlin_17.Controller.IndexController"
+            style="-fx-background-image: url('/project/chenlin_17/Pictures/Background/background1.png')"
+            stylesheets="@../Stylesheets/Index.css">
+    <ImageView fx:id="m_ImageView">
+        <Image url="@../Pictures/Background/background1.png"/>
+    </ImageView>
+
+    <VBox AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" spacing="60">
+        <ImageView fx:id="m_Title">
+            <Image url="@../Pictures/Background/title.png"/>
+        </ImageView>
+
+        <VBox fx:id="m_ButtonBox" AnchorPane.leftAnchor="0" alignment="CENTER" maxWidth="300" spacing="50">
+            <padding>
+                <Insets left="50"/>
+            </padding>
+            <HBox>
+                <ImageView fx:id="INFO" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../Pictures/Background/info.png"/>
+                </ImageView>
+                <Button text="HOW TO PLAY" mnemonicParsing="false" onMouseClicked="#ShowInstructions"/>
+            </HBox>
+
+            <HBox>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../Pictures/Background/setting.png"/>
+                </ImageView>
+                <Button text="OPTIONS" mnemonicParsing="false" onMouseClicked="#ShowOptions"/>
+            </HBox>
+
+            <HBox>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../Pictures/Background/hit.png"/>
+                </ImageView>
+                <Button text="START GAME" mnemonicParsing="false" onMouseClicked="#StartGame"/>
+            </HBox>
+
+            <HBox>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../Pictures/Background/rank.png"/>
+                </ImageView>
+                <Button text="RANK" mnemonicParsing="false" onMouseClicked="#ShowRank"/>
+            </HBox>
+
+            <HBox>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../Pictures/Background/exit.png"/>
+                </ImageView>
+                <Button text="EXIT" mnemonicParsing="false" onMouseClicked="#ExitGame"/>
+            </HBox>
+        </VBox>
+    </VBox>
+
+    <ImageView fx:id="m_Music" fitHeight="30.0" fitWidth="30.0" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20"
+               pickOnBounds="true" preserveRatio="true" onMouseClicked="#OnClickedVolume"
+               onMouseEntered="#OnHoverVolume">
+        <Image url="@../Pictures/Background/music.png"/>
+    </ImageView>
+    <Slider fx:id="m_BGMVolumeSlider" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10" majorTickUnit="50.0"
+            minorTickCount="4" prefHeight="14.0" prefWidth="150.0" showTickLabels="true" showTickMarks="true"
+            snapToTicks="true" onMouseEntered="#OnChangeVolume" visible="false"/>
+</AnchorPane>

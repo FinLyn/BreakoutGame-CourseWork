@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.collections.FXCollections?>
+<AnchorPane fx:id="m_CharacterBackground" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="project.chenlin_17.Controller.CharacterOptionsController"
+            stylesheets="@../Stylesheets/SceneOptions.css"
+            prefHeight="400.0" prefWidth="600.0">
+
+
+    <VBox fx:id="m_Vbox" alignment="TOP_CENTER" AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="50"
+          AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" spacing="20">
+        <Text fx:id="m_SceneTitle" text="SELECT CHARACTER"/>
+        <HBox fx:id="m_PersonBox" alignment="TOP_CENTER">
+            <ImageView fitHeight="120" fitWidth="120"/>
+            <ImageView fitHeight="120" fitWidth="120"/>
+            <ImageView fitHeight="120" fitWidth="120"/>
+            <ImageView fitHeight="120" fitWidth="120"/>
+
+        </HBox>
+        <VBox fx:id="m_ChooseVbox" prefWidth="480" prefHeight="200" maxWidth="700">
+            <HBox fx:id="m_SetChoose">
+                <Label fx:id="m_ChooseSetText" text="Choose Set"/>
+                <ComboBox fx:id="m_ComboBox">
+                    <items>
+                        <FXCollections fx:id="m_Collections" fx:factory="observableArrayList">
+                            <String fx:value="Set1"/>
+                            <String fx:value="Set2"/>
+                            <String fx:value="Set3"/>
+                            <String fx:value="Set4"/>
+                        </FXCollections>
+                    </items>
+                    <value>
+                        <String fx:value="Set1"/>
+                    </value>
+                </ComboBox>
+            </HBox>
+            <HBox fx:id="m_PaddleChoose">
+                <Label fx:id="m_ChoosePaddleText" text="Choose Paddle Color"/>
+                <fx:define>
+                    <ToggleGroup fx:id="m_ChoosePaddle"/>
+                </fx:define>
+                <RadioButton fx:id="m_PaddleButton" text="Black" mnemonicParsing="false" toggleGroup="$m_ChoosePaddle">
+                </RadioButton>
+                <RadioButton text="White" mnemonicParsing="false" toggleGroup="$m_ChoosePaddle">
+                </RadioButton>
+                <RadioButton text="Blue" mnemonicParsing="false" toggleGroup="$m_ChoosePaddle">
+                </RadioButton>
+                <RadioButton text="Grey" mnemonicParsing="false" toggleGroup="$m_ChoosePaddle">
+                </RadioButton>
+            </HBox>
+            <HBox fx:id="m_BallChoose">
+                <Label fx:id="m_ChooseBallText" text="Choose Ball Color"></Label>
+                <fx:define>
+                    <ToggleGroup fx:id="m_ChooseBall"/>
+                </fx:define>
+                <RadioButton fx:id="m_BallButton" text="Black" mnemonicParsing="false" toggleGroup="$m_ChooseBall">
+                </RadioButton>
+                <RadioButton text="White" mnemonicParsing="false" toggleGroup="$m_ChooseBall">
+                </RadioButton>
+                <RadioButton text="Blue" mnemonicParsing="false" toggleGroup="$m_ChooseBall">
+                </RadioButton>
+                <RadioButton text="Grey" mnemonicParsing="false" toggleGroup="$m_ChooseBall">
+                </RadioButton>
+            </HBox>
+        </VBox>
+        <HBox fx:id="m_ChangeScene" alignment="CENTER" AnchorPane.bottomAnchor="40">
+            <Button fx:id="m_Back" mnemonicParsing="false" text="BACK" onMouseClicked="#ToSceneChoice"/>
+            <Button fx:id="m_Next" mnemonicParsing="false" text="DONE" onMouseClicked="#Complete"/>
+        </HBox>
+    </VBox>
+</AnchorPane>

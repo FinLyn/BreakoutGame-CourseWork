@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="project.chenlin_17.Controller.LogInController"
+            stylesheets="@../Stylesheets/LogIn.css"
+            prefHeight="400.0" prefWidth="600.0">
+        <GridPane fx:id="m_GridSetting" AnchorPane.rightAnchor="50" AnchorPane.leftAnchor="50" AnchorPane.topAnchor="150" AnchorPane.bottomAnchor="50" >
+                <children>
+                        <Label text="User Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="requiredText"/>
+                        <TextField fx:id="m_UserName" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                        <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="requiredText"/>
+                        <PasswordField fx:id= "m_Password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                <Button fx:id="m_SignIn" text="Sign In" onAction="#HandleSubmitButtonAction"/>
+                        </HBox>
+                </children>
+
+        </GridPane>
+        <padding>
+            <Insets top="25" right="25" bottom="10" left="25"/>
+        </padding>
+
+
+
+</AnchorPane>

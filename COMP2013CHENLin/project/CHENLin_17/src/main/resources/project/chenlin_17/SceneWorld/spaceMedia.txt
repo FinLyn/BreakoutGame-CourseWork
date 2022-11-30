@@ -1,0 +1,15 @@
+15 10
+
+
+        cc      sss
+       cccc    sssss
+      cccccc   ssssss
+      cScS  sssssss
+      cslcsl  ssssss
+      cccccc  sssss   L
+      cccccc  ssss    L
+      cccccc  sssss
+      c cc c  ssssss
+      c cc c  sssssss
+      c cc c   sssss
+                sss

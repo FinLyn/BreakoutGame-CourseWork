@@ -1,0 +1,18 @@
+16 16
+
+
+      c
+     Ss        S
+    cCCc      cCc
+  LCcCL   CLcLc
+ SLScC c   sLCcC
+cCCc CcLCsCCcSS
+  ClC sCCcCcLL
+   cSc    cC cLCc cC
+    C l
+      S
+
+            l
+           cSc    CcC
+    Cl   LcLc     c
+            Sc

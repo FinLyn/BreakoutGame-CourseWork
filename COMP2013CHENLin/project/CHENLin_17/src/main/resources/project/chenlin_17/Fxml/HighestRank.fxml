@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<AnchorPane fx:id="m_Background" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="project.chenlin_17.Controller.HighestRankController"
+            stylesheets="@../Stylesheets/HighestRank.css"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox AnchorPane.topAnchor="30" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" alignment="CENTER"
+          spacing="10">
+        <Text fx:id="m_Title" text="HIGH SCORE">
+        </Text>
+        <Text text="Your Highest Score:" fx:id="m_TextScoreDisplay"/>
+        <Text fx:id="m_UserScore"/>
+        <HBox fx:id="m_TextScore" prefWidth="189" prefHeight="100">
+            <Text fx:id="m_RankBoard" text="Rank Board"/>
+        </HBox>
+        <GridPane fx:id="m_GridPane" blendMode="MULTIPLY" prefWidth="528.0" styleClass="block" VBox.vgrow="ALWAYS"
+                  vgap="25">
+            <HBox GridPane.rowIndex="0" styleClass="rankListTitle">
+                <Label text="Rank" GridPane.columnIndex="0"/>
+                <Label text="User" GridPane.columnIndex="1"/>
+                <Label text="Score" GridPane.columnIndex="2"/>
+            </HBox>
+            <HBox GridPane.rowIndex="1" styleClass="rankList">
+                <Label GridPane.columnIndex="0"/>
+                <Label GridPane.columnIndex="1"/>
+                <Label GridPane.columnIndex="2"/>
+            </HBox>
+            <HBox GridPane.rowIndex="2" styleClass="rankList">
+                <Label GridPane.columnIndex="0"/>
+                <Label GridPane.columnIndex="1"/>
+                <Label GridPane.columnIndex="2"/>
+            </HBox>
+            <HBox GridPane.rowIndex="3" styleClass="rankList">
+                <Label GridPane.columnIndex="0"/>
+                <Label GridPane.columnIndex="1"/>
+                <Label GridPane.columnIndex="2"/>
+            </HBox>
+            <HBox GridPane.rowIndex="4" styleClass="rankList">
+                <Label GridPane.columnIndex="0"/>
+                <Label GridPane.columnIndex="1"/>
+                <Label GridPane.columnIndex="2"/>
+            </HBox>
+            <HBox GridPane.rowIndex="5" styleClass="rankList">
+                <Label GridPane.columnIndex="0"/>
+                <Label GridPane.columnIndex="1"/>
+                <Label GridPane.columnIndex="2"/>
+            </HBox>
+        </GridPane>
+
+    </VBox>
+
+    <ImageView fx:id="m_Back" fitHeight="30.0" fitWidth="30.0" layoutX="12" layoutY="12"
+               onMouseClicked="#OnClickedBack" onMouseEntered="#OnHoveredBack" onMouseExited="#OffHoveredBack"
+               pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Pictures/Background/close.png"/>
+    </ImageView>
+</AnchorPane>

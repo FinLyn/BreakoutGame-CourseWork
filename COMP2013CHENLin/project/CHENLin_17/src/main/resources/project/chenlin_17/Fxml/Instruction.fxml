@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<AnchorPane id="m_Background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="project.chenlin_17.Controller.InstructionController"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="@../Stylesheets/Instruction.css">
+    <ImageView fx:id="m_Back" fitHeight="30.0" fitWidth="30.0" layoutX="12" layoutY="12"
+               onMouseClicked="#OnClickedBack"
+               pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Pictures/Background/close.png"/>
+    </ImageView>
+    <VBox alignment="CENTER" spacing="20" AnchorPane.topAnchor="30" AnchorPane.leftAnchor="50"
+          AnchorPane.rightAnchor="50">
+        <Label fx:id="m_MainPaneText" text="INFO">
+        </Label>
+        <AnchorPane blendMode="MULTIPLY" prefWidth="300" maxWidth="700">
+            <HBox styleClass="block" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50">
+                <Text fx:id="m_Welcome" textAlignment="CENTER" text="Welcome to the Breakout World!"
+                      wrappingWidth="450">
+                </Text>
+            </HBox>
+            <VBox AnchorPane.topAnchor="25" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" spacing="5">
+                <HBox styleClass="block">
+                    <Text wrappingWidth="450" styleClass="details"
+                          text="It has four worlds – General, Space, Soccer and City. The general world is the one where you can get started with! You can also try different world settings and set your character by choosing the recommended set.">
+                    </Text>
+                </HBox>
+                <HBox styleClass="block">
+                    <Text wrappingWidth="450" styleClass="details"
+                          text="Each world contains three basic components, the paddle, the ball and the bricks. You are expected to break all the bricks in the scene and continue your hero journey. There are three different types of bricks- Clay, Cement and Steel. Clay is easy to broken, if you hit a cement brick, firstly it will show a crack and the second time the ball hit the brick, it will break. The steel brick is broken by possibility and they have their corresponding score values. If your ball falls outside the paddle space, you may lose one life, you have three lives to play. After all the bricks are broken, you may get to the next level. If you complete level 4, you win!">
+                    </Text>
+                </HBox>
+                <HBox styleClass="block" AnchorPane.leftAnchor="50" AnchorPane.topAnchor="80">
+                    <Text wrappingWidth="450" styleClass="details"
+                          text="You are able to “get Buff” and pause the game timer in the playing process.">
+                    </Text>
+                </HBox>
+            </VBox>
+
+
+            <VBox AnchorPane.leftAnchor="110" AnchorPane.topAnchor="280">
+                <HBox>
+                    <Label styleClass="instructionTitle" text="Move left">
+                    </Label>
+                    <ImageView fitHeight="41.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../Pictures/Background/keyLeft.png"/>
+                    </ImageView>
+                </HBox>
+                <HBox>
+                    <Label styleClass="instructionTitle" text="Move Right">
+                    </Label>
+                    <ImageView fitHeight="41.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../Pictures/Background/keyRight.png"/>
+                    </ImageView>
+                </HBox>
+                <HBox>
+                    <Label styleClass="instructionTitle" text="Pause">
+                    </Label>
+                    <ImageView fitHeight="41.0" fitWidth="32.0" layoutX="500.0" layoutY="360.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <Image url="@../Pictures/Background/keySpace.png"/>
+                    </ImageView>
+                </HBox>
+                <HBox>
+                    <Label styleClass="instructionTitle" text="Show Pause Menu">
+                    </Label>
+                    <ImageView fitHeight="41.0" fitWidth="32.0" layoutX="500.0" layoutY="360.0" pickOnBounds="true"
+                               preserveRatio="true">
+                        <Image url="@../Pictures/Background/keyEsc.png"/>
+                    </ImageView>
+                </HBox>
+                <HBox>
+                    <Label styleClass="instructionTitle" text="Show Buff Menu">
+                    </Label>
+                    <HBox spacing="10">
+                        <ImageView fitHeight="35.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../Pictures/Background/keyF1.png"/>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../Pictures/Background/keyCtrl.png"/>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../Pictures/Background/keyShift.png"/>
+                        </ImageView>
+
+                    </HBox>
+                </HBox>
+            </VBox>
+        </AnchorPane>
+    </VBox>
+
+</AnchorPane>

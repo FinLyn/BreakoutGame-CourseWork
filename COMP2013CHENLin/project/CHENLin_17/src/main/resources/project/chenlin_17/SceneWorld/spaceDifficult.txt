@@ -1,0 +1,21 @@
+14 5
+
+
+         C
+        cC
+       CCc
+     CCCC
+       lsssl      sss
+    c  l s l     sssss
+    c  lsssl     sssss
+    c  lslsl    sslllss
+    c  L L    sllllls
+    C LlL    sllllls
+     c  lll     sl l ls
+     CLlL    sl l ls
+      CLL     lllll
+       cLL     allla
+                 a   a
+                  lll
+                 ccscc
+                 ccscc

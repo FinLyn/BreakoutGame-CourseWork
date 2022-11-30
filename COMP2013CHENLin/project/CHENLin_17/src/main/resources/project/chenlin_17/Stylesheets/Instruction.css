@@ -1,0 +1,56 @@
+#m_Background {
+    -fx-background-color: linear-gradient(#b2e5f6, #0e77c2);
+    -fx-opacity: 0.8;
+    -fx-background-size: 100%;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-fill-height: 100%;
+    -fx-fit-to-width: 100%;
+    -fx-fit-to-height: 100%;
+    -fx-fit-to-width: 100%;
+}
+
+#m_ScrollPane{
+    -fx-background-color: linear-gradient(#b2e5f6, #0e77c2);
+}
+
+.block {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 10;
+}
+#m_Welcome{
+    -fx-font-family: "Stencil";
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-stroke:white;
+    -fx-stroke-width: 0.4;
+    -fx-fill: #4f4b4b;
+
+}
+
+.details{
+    -fx-font-family: "Calisto MT";
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-fill: #4f4b4b;
+    -fx-text-alignment: LEFT;
+}
+
+
+
+#m_MainPaneText .text{
+    -fx-stroke-type: outside;
+    -fx-stroke: #4f4b4b;
+    -fx-stroke-width: 3;
+    -fx-font-size: 50;
+    -fx-fill: #ece9e9;
+    -fx-font-family: Algerian;
+}
+
+.instructionTitle{
+    -fx-font-family: "Algerian";
+    -fx-fill: #ece9e9;
+    -fx-pref-width: 200;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,80 @@
+#m_Background {
+    -fx-background-image: url("../Pictures/Background/gameOverBackground.png");
+    -fx-fit-to-width: 100%;
+    -fx-alignment: center;
+}
+
+#m_RankBoard{
+    -fx-background-color: lightgrey;
+    -fx-background-radius: 40;
+    -fx-alignment: center;
+}
+
+.rankList{
+    -fx-fill: #4f4b4b;
+    -fx-font-family:"Stencil";
+}
+
+.rankList .label{
+    -fx-fill: #4f4b4b;
+    -fx-pref-width: 150;
+    -fx-pref-height: 50;
+    -fx-font-size: 12;
+    -fx-alignment: Center;
+}
+
+.rankListTitle{
+    -fx-fill: #4f4b4b;
+    -fx-font-family: Stencil;
+    -fx-font-size: 18;
+}
+
+.rankListTitle .label{
+    -fx-fill: #4f4b4b;
+    -fx-pref-width: 150;
+    -fx-font-size: 18;
+    -fx-alignment: center;
+}
+
+
+.block {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 10;
+}
+
+.myLabel {
+    -fx-font-family:"Calisto MT";
+    -fx-font-size: 14;
+}
+
+.button {
+    -fx-font-family: "Calisto MT";
+    -fx-stroke-width: 3;
+    -fx-stroke: white;
+    -fx-fill:darkblue;
+    -fx-text-fill: white;
+    -fx-background-color: rgb(158, 215, 236);
+    -fx-background-size: 80%;
+    -fx-background-radius: 50;
+    -fx-font-weight: bold;
+}
+.tableHead{
+    -fx-font-family:"Calisto MT";
+    -fx-font-size: 18;
+}
+.tableLine .text{
+    -fx-alignment: center;
+    -fx-font-family: "Calisto MT";
+    -fx-font-size: 23;
+    -fx-stroke: black;
+    -fx-stroke-type: outside;
+    -fx-text-fill:white;
+    -fx-stroke-width: 0.2;
+    -fx-font-scale: 2;
+
+}
+
+
+#m_ShowBoard{
+    -fx-spacing: 10;
+}

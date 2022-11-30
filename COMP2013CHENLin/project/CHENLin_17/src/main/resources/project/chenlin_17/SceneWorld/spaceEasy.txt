@@ -1,0 +1,14 @@
+10 4
+
+
+         ll
+        llll
+        cccc
+   ccccccscsc
+     cccs s c
+    cc llllll
+     c lllllll
+      llalllal
+      lllaaall
+       llllll
+        llll

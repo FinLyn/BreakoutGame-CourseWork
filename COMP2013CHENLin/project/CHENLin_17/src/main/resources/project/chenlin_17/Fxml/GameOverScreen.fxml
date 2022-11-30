@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id ="m_Background" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="project.chenlin_17.Controller.GameOverScreenController"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@../Stylesheets/GameOverScreen.css" >
+
+    <children>
+        <VBox fx:id="m_ShowBoard" AnchorPane.rightAnchor="100" AnchorPane.leftAnchor="100" AnchorPane.bottomAnchor="100" AnchorPane.topAnchor="20"  alignment="CENTER">
+            <VBox fx:id="m_LabelContainer" VBox.vgrow="NEVER" alignment="TOP_CENTER">
+                <ImageView fx:id="m_Heading" fitHeight="100" fitWidth="200"/>
+<!--            <Label fx:id="heading" textAlignment="CENTER">-->
+<!--            </Label>-->
+             </VBox>
+
+            <GridPane fx:id="m_RankBoard" blendMode="MULTIPLY" prefWidth="528.0" styleClass="block" VBox.vgrow="ALWAYS" vgap="25">
+                <children>
+                    <HBox GridPane.rowIndex="0" styleClass="rankListTitle">
+                        <Label text="Player" GridPane.columnIndex="0"/>
+                        <Label text ="Score" GridPane.columnIndex="1"/>
+                        <Label text ="Time" GridPane.columnIndex="2"/>
+                    </HBox>
+                    <HBox fx:id="label0" GridPane.rowIndex="1" styleClass="rankList" visible="false">
+                        <Label GridPane.columnIndex="0"/>
+                        <Label GridPane.columnIndex="1"/>
+                        <Label GridPane.columnIndex="2"/>
+                    </HBox>
+                    <HBox fx:id="label1" GridPane.rowIndex="2" styleClass="rankList" visible="false">
+                        <Label GridPane.columnIndex="0"/>
+                        <Label GridPane.columnIndex="1"/>
+                        <Label GridPane.columnIndex="2"/>
+                    </HBox>
+                    <HBox fx:id="label2" GridPane.rowIndex="3" styleClass="rankList" visible="false">
+                        <Label GridPane.columnIndex="0"/>
+                        <Label GridPane.columnIndex="1"/>
+                        <Label GridPane.columnIndex="2"/>
+                    </HBox>
+                    <HBox fx:id="label3" GridPane.rowIndex="4" styleClass="rankList" visible="false">
+                        <Label GridPane.columnIndex="0"/>
+                        <Label GridPane.columnIndex="1"/>
+                        <Label GridPane.columnIndex="2"/>
+                    </HBox>
+                    <HBox fx:id="label4" GridPane.rowIndex="5" styleClass="rankList" visible="false">
+                        <Label GridPane.columnIndex="0"/>
+                        <Label GridPane.columnIndex="1"/>
+                        <Label GridPane.columnIndex="2"/>
+                    </HBox>
+                </children>
+            </GridPane>
+            <HBox fx:id="m_MyScore" styleClass="rankList" visible="false">
+                <Label/>
+                <Label/>
+                <Label/>
+            </HBox>
+        </VBox>
+        <HBox fx:id="m_HboxButton" prefHeight="30" maxHeight="60" AnchorPane.bottomAnchor="40" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20"  alignment="CENTER"  >
+            <Button fx:id="m_Save" prefHeight="20" prefWidth="150" maxHeight="70" maxWidth="300"  text="SAVE" onMouseClicked="#SaveThisRecord"></Button>
+            <Button fx:id="m_Back" prefHeight="20" prefWidth="150" maxHeight="70" maxWidth="300" text ="BACK TO MENU" onMouseClicked="#BackToMenu"></Button>
+        </HBox>
+        <HBox fx:id="m_MyTip" prefWidth="120.0" >
+            <children>
+                <Label fx:id="m_ScoreField" text="Yours">
+                </Label>
+                <ImageView fx:id="m_Arrow" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Pictures/Background/arrow.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

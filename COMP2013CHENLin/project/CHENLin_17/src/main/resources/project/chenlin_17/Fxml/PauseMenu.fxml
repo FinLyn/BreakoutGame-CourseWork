@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="m_PausePane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.chenlin_17.Controller.PauseMenuController" stylesheets="@../Stylesheets/PauseMenu.css"  >
+    <children>
+        <VBox fx:id="m_ShowBox" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20" spacing="50" >
+            <VBox alignment="CENTER">
+            <Text fx:id ="m_TextTitle" text="Paused"/>
+            </VBox>
+        <VBox alignment="CENTER" spacing="30" >
+            <Button mnemonicParsing="false" onMouseClicked="#ContinueButtonOnClicked" text="Continue"/>
+            <Button mnemonicParsing="false" onMouseClicked="#RestartButtonOnClicked" text="Replay" />
+            <Button mnemonicParsing="false" onMouseClicked="#MenuClicked" text="Start Menu"/>
+        </VBox>
+        </VBox>
+    </children>
+
+</AnchorPane>

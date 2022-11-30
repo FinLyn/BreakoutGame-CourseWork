@@ -1,0 +1,49 @@
+/*#pausePane{*/
+/*    -fx-background-color: lightGrey;*/
+/*    -fx-opacity: 0.4;*/
+/*}*/
+#m_TextTitle{
+    -fx-text-align: center;
+    -fx-fill: white;
+    -fx-stroke: Black;
+    -fx-stroke-width: 5.0;
+    -fx-stroke-type: outside;
+    -fx-font-family: "Calisto MT";
+    -fx-font-size: 100;
+}
+
+
+#m_ShowBox{
+    -fx-background-image: url("../Pictures/Background/pauseMenu.png");
+    -fx-background-position: center,center;
+    -fx-background-insets: 1;
+    -fx-background-repeat: no-repeat;
+    -fx-opacity: 0.8;
+    -fx-background-size: 80%;
+    -fx-background-radius: 50;
+
+}
+.button{
+    -fx-font-family: "Calisto MT";
+    -fx-background-color: transparent;
+}
+.text{
+    -fx-font-family: "Calisto MT";
+    -fx-font-size: 23;
+    -fx-stroke: black;
+    -fx-stroke-type: outside;
+    -fx-fill:white;
+    -fx-stroke-width: 0.5;
+    -fx-font-scale: 2;
+    -fx-padding: 2;
+}
+.button :hover{
+    -fx-font-size: 25;
+    -fx-stroke-width: 2;
+}
+#m_Close{
+    -fx-background-image: url("../Pictures/Background/close.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: black;
+
+}

@@ -1,0 +1,88 @@
+#m_Background {
+    -fx-background-color: linear-gradient(#b2e5f6, #0e77c2);
+    -fx-opacity: 0.8;
+    -fx-background-size: 100%;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-fill-height: 100%;
+    -fx-fit-to-width: 100%;
+    -fx-fit-to-height: 100%;
+    -fx-fit-to-width: 100%;
+}
+
+.block {
+    -fx-padding: 20 0;
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 10;
+    -fx-tile-alignment: center;
+    -fx-alignment: center;
+    -fx-end-margin: 30;
+}
+
+.myLabel {
+    -fx-font-family: "Stencil";
+    -fx-font-size: 12;
+}
+
+.rankList{
+    -fx-fill: #4f4b4b;
+    -fx-font-family:"Stencil";
+}
+
+.rankList .label{
+    -fx-fill: #4f4b4b;
+    -fx-pref-width: 150;
+    -fx-font-size: 12;
+    -fx-alignment: Center;
+}
+
+.rankListTitle{
+    -fx-fill: #4f4b4b;
+    -fx-font-family: Stencil;
+    -fx-font-size: 18;
+}
+
+.rankListTitle .label{
+    -fx-fill: #4f4b4b;
+    -fx-pref-width: 150;
+    -fx-font-size: 18;
+    -fx-alignment: center;
+}
+
+#m_Title{
+    -fx-stroke-type: outside;
+    -fx-stroke: #4f4b4b;
+    -fx-stroke-width: 3;
+    -fx-font-size: 50;
+    -fx-fill: #ece9e9;
+    -fx-font-family: Algerian;
+}
+
+#m_UserScore{
+    -fx-font-size: 40;
+    -fx-fill: #ece9e9;
+    -fx-font-family: Stencil;
+}
+
+#m_TextScore{
+   -fx-background-image: url("../Pictures/Background/star.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+    -fx-background-size: 40%;
+}
+#m_TextScoreDisplay{
+    -fx-pref-height: 40;
+    -fx-font-family: Stencil;
+    -fx-font-size: 15;
+}
+
+#m_RankBoard{
+    -fx-stroke-type: outside;
+    -fx-stroke: #f1efef;
+    -fx-stroke-width: 1.5;
+    -fx-font-size: 30;
+    -fx-fill: #4f4b4b;
+    -fx-font-family: Stencil;
+
+}

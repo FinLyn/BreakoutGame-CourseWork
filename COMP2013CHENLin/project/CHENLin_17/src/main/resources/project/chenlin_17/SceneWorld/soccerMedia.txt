@@ -1,0 +1,17 @@
+14 8
+
+
+       C        C
+     cs  c      c sc
+    cs S c    c S sc
+   c     s c  c s     c
+        c s C s c
+      L c s  s c L
+     CL c S c LC
+      CL c  c LC
+       CL C LC
+        CL  LC
+         CLLC
+          CLC
+           CC
+            C

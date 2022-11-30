@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="project.chenlin_17.Controller.PowerUpController"
+            stylesheets="@../Stylesheets/PowerUp.css"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox fx:id="m_PowerUp" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="TOP_CENTER">
+            <Text fx:id ="m_TextTitle" text="Buff"/>
+
+        <HBox styleClass="speedBox">
+            <Label text="Change X speed"/>
+            <Slider fx:id="m_XSpeed" min="-4" max="4"/>
+        </HBox>
+        <HBox styleClass="speedBox">
+            <Label text="Change Y speed" ></Label>
+            <Slider fx:id="m_YSpeed" min="-4" max="4"></Slider>
+        </HBox>
+        <HBox styleClass="speedBox1">
+            <Button fx:id="m_Reset" text = "Reset Ball" onMouseClicked="#ResetBall" mnemonicParsing="true" ></Button>
+        </HBox>
+        <HBox styleClass="speedBox1">
+            <Button fx:id="m_Skip" text="Skip Level" onMouseClicked="#SkipLevel" mnemonicParsing="true"/>
+        </HBox>
+        <Label fx:id="m_Warning" text="No next level, please continue this level" visible="false"/>
+    </VBox>
+    <ImageView fx:id="m_Exit" onMouseClicked="#Exit">
+        <Image url="@../Pictures/Background/close.png"/>
+    </ImageView>
+
+
+
+</AnchorPane>

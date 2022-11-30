@@ -1,0 +1,58 @@
+#m_YSpeed,#m_XSpeed{
+    -fx-pref-width: 150;
+    -fx-pref-height: 20;
+    -fx-major-tick-unit: 4;
+    -fx-minor-tick-count: 3;
+    -fx-show-tick-labels: true;
+    -fx-show-tick-marks: true;
+}
+#m_PowerUp .text{
+    -fx-font-family: Stencil;
+    -fx-font-size: 15;
+    -fx-stroke: white;
+    -fx-stroke-type: outside;
+    -fx-fill:black;
+    -fx-stroke-width: 1;
+}
+#m_PowerUp{
+    -fx-background-image: url("../Pictures/Background/passMenu.png");
+    -fx-background-position: center,center;
+    -fx-background-insets: 1;
+    -fx-background-repeat: no-repeat;
+    -fx-opacity: 0.8;
+    -fx-background-size: 80%;
+    -fx-spacing: 30;
+}
+.speedBox{
+    -fx-spacing: 100;
+    -fx-alignment: center;
+}
+
+#m_TextTitle{
+    -fx-text-align: center;
+    -fx-fill: white;
+    -fx-stroke: Black;
+    -fx-stroke-width: 5.0;
+    -fx-stroke-type: outside;
+    -fx-font-family: "Calisto MT";
+    -fx-font-size: 100;
+}
+.speedBox1{
+    -fx-alignment: center;
+}
+.speedBox1 .button{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: grey;
+}
+.speedBox2{
+    -fx-alignment: center;
+}
+.speedBox2 .button{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color:green;
+}
+
+
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.cell.CheckBoxListCell?>
+<AnchorPane fx:id="m_Background" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="project.chenlin_17.Controller.SceneOptionsController"
+            stylesheets="@../Stylesheets/SceneOptions.css">
+   <children>
+       <VBox fx:id="m_Vbox" alignment="TOP_CENTER" AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="50" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" spacing="20">
+           <Text fx:id="m_SceneTitle" text="SELECT MODE"/>
+           <HBox fx:id="m_ImageBox" alignment="CENTER">
+               <VBox styleClass="vboxclass">
+                   <ImageView fitHeight="120" fitWidth="100">
+                   <Image url="@../Pictures/generalScene.png"/>
+                   </ImageView>
+                   <Label text ="General"></Label>
+               </VBox>
+               <VBox styleClass="vboxclass">
+                   <ImageView fitHeight="120" fitWidth="100">
+                       <Image url="@../Pictures/City/cityScene.png"/>
+                   </ImageView>
+                   <Label text="City Mode"></Label>
+               </VBox>
+               <VBox styleClass="vboxclass">
+                   <ImageView fitHeight="120" fitWidth="100">
+                       <Image url="@../Pictures/Space/spaceScene.png"/>
+                   </ImageView>
+                   <Label text ="Space Mode"></Label>
+               </VBox>
+               <VBox styleClass="vboxclass">
+                   <ImageView fitHeight="120" fitWidth="100">
+                       <Image url="@../Pictures/Soccer/soccerScene.png"/>
+                   </ImageView>
+                   <Label text ="Sports Mode"></Label>
+               </VBox>
+
+           </HBox>
+           <VBox fx:id="m_ChooseVbox" alignment="CENTER" AnchorPane.leftAnchor="40" prefWidth="480" prefHeight="200" maxWidth="700">
+               <HBox fx:id="m_TextChoice" AnchorPane.leftAnchor="100" >
+                   <Label fx:id="m_SceneOptions" text="Scene Options"></Label>
+                   <ComboBox fx:id="m_ComboBox">
+                       <items>
+                           <FXCollections fx:id="m_Collections" fx:factory="observableArrayList">
+                               <String fx:value="General" />
+                               <String fx:value="City" />
+                               <String fx:value="Space" />
+                               <String fx:value="Sports" />
+                           </FXCollections>
+                       </items>
+                       <value>
+                           <String fx:value="General" />
+                       </value>
+                   </ComboBox>
+               </HBox>
+               <HBox fx:id="m_DifficultyChoice">
+                   <Label fx:id="m_DifficultyChoiceText" text="Difficulty"></Label>
+                   <fx:define>
+                       <ToggleGroup fx:id="m_Difficulty"/>
+                   </fx:define>
+                   <RadioButton fx:id="m_Easy" text ="Easy" mnemonicParsing="false" selected="true" toggleGroup="$m_Difficulty">
+                   </RadioButton>
+                   <RadioButton fx:id="m_Media" text ="Media" mnemonicParsing="false" toggleGroup="$m_Difficulty">
+                   </RadioButton>
+                   <RadioButton fx:id="m_Difficult" text ="Difficult" mnemonicParsing="false" toggleGroup="$m_Difficulty">
+                   </RadioButton>
+               </HBox>
+           </VBox>
+
+           <HBox fx:id="m_ChangeScene" alignment="CENTER">
+               <Button fx:id="m_Back" mnemonicParsing="false" text="BACK" onMouseClicked="#PreviousSetting"/>
+               <Button fx:id="m_Next" mnemonicParsing="false" text="NEXT" onMouseClicked="#NextSetting"/>
+           </HBox>
+      </VBox>
+   </children>
+</AnchorPane>
